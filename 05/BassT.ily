@@ -1,0 +1,17 @@
+{ 
+Si -- cut e -- rat in prin -- ci -- pi -- o, et nunc et sem -- _ _ _ _ _ _ _ per,
+si -- cut e -- rat in prin -- ci -- pi -- o
+et in sae -- cu -- la sae -- cu -- lo -- _ _ _ _ rum,
+a --  _ _ men,
+si -- cut e -- rat in prin -- ci -- pi -- o et nunc et
+sem -- per et in sae -- cu -- la
+sae -- cu -- lo -- rum,
+a -- men,
+et in sae -- cu -- la sae -- cu -- lo -- _ _ rum,
+a -- _ men,
+si -- cut e -- rat in prin -- ci -- pi -- o,
+et nunc et sem -- per
+et in sae -- cu -- la sae -- cu -- lo -- rum,
+et in sae -- cu -- la sae -- cu -- lo -- rum,
+a -- men. 
+}
