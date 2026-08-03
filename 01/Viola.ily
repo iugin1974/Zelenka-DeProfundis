@@ -11,8 +11,8 @@
   cis4 r r2 |
   R1*4/4*7 |
   r2 r4 c |
-  a'2 g4 a |
-  f gis d es |
+  a'2 f4 g |
+  e fis d es |
   a, d2 c8 b |
 
   %20

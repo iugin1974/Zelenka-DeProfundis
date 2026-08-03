@@ -130,7 +130,6 @@
                 \consists Ligature_bracket_engraver
               }
             }
-
           }
         }
       }
