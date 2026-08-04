@@ -10,6 +10,7 @@ s2
 s2
 s1
 \tempo "Un poco andante" 2=100
+\break
 \time 3/2
 s1.*$(- 47 36)
 \tempo "Adagio"
@@ -24,6 +25,7 @@ s1.*$(- 75 56)
 s1.
 \bar "||"
 \tempo "Largo" 8=104
+\break
 s1*$(- 83 75)
 s2.
 \tempo "Adagio"
