@@ -216,13 +216,14 @@
         \new PianoStaff \with \smallStaff <<
           \new Staff <<
             \include #(string-append prefix "Global.ily")
-            \include #(string-append prefix "Violine1.ily") \\
-            \include #(string-append prefix "Violine2.ily")
+            \include #(string-append prefix "SopranM.ily") \\
+            \include #(string-append prefix "AltM.ily")
           >>
           \new Staff  <<
             \clef "bass"
             \include #(string-append prefix "Global.ily")
-            \include #(string-append prefix "Violoncello.ily")
+            \include #(string-append prefix "TenorM.ily") \\
+            \include #(string-append prefix "BassM.ily")
           >>
         >>
       >>
@@ -292,17 +293,17 @@
           \new Lyrics \lyricsto "BassM" \include #(string-append prefix "BassT.ily")
         >>
 
-        \new PianoStaff \with \smallStaff <<
+       \new PianoStaff \with \smallStaff <<
           \new Staff <<
             \include #(string-append prefix "Global.ily")
-            \include #(string-append prefix "Violine1.ily") \\
-            \include #(string-append prefix "Violine2.ily")
+            \include #(string-append prefix "SopranM.ily") \\
+            \include #(string-append prefix "AltM.ily")
           >>
           \new Staff  <<
             \clef "bass"
             \include #(string-append prefix "Global.ily")
-            \include #(string-append prefix "Viola.ily") \\
-            \include #(string-append prefix "Violoncello.ily")
+            \include #(string-append prefix "TenorM.ily") \\
+            \include #(string-append prefix "BassM.ily")
           >>
         >>
       >>
