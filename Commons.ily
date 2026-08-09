@@ -125,7 +125,7 @@ tbnIIIvn = \with {
 
 setBeams = {
 \autoBeamOff
-\set melismaBusyProperties = #'(tieMelismaBusy slurMelismaBusy)  
+\set melismaBusyProperties = #'(tieMelismaBusy slurMelismaBusy)
 }
 
 defaultBeams = #(define-music-function (m) (ly:music?)
@@ -203,9 +203,13 @@ smallStaff = \with {
   \override StaffSymbol.thickness = #(magstep -2)
 }
 
-noDym = \layout {
+pianoLayout = \layout {
   \context {
-    \Score
+    \Staff
+    \consists "Merge_rests_engraver"
+  }
+  \context {
+    \PianoStaff
     \omit Dynamics.DynamicText
   }
 }

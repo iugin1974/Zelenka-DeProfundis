@@ -4,7 +4,7 @@
 \include "Commons.ily"
 #(set-global-staff-size 15)
 \pointAndClickOff
-\noDym
+
 
 \paper {
   markup-system-spacing.padding = #5
@@ -54,7 +54,7 @@
 
         \new PianoStaff \with \smallStaff <<
           \new Staff <<
-              \include #(string-append prefix "Global.ily")
+            \include #(string-append prefix "Global.ily")
             \include #(string-append prefix "Violine1.ily") \\
             \include #(string-append prefix "Violine2.ily")
           >>
@@ -65,12 +65,7 @@
           >>
         >>
       >>
-      \layout {
-        \context {
-          \Score
-          \RemoveEmptyStaves
-        }
-      }
+      \pianoLayout
     }
   }
 
@@ -144,12 +139,7 @@
           >>
         >>
       >>
-      \layout {
-        \context {
-          \Score
-          \RemoveEmptyStaves
-        }
-      }
+      \pianoLayout
     }
   }
 
@@ -183,6 +173,7 @@
           >>
         >>
       >>
+      \pianoLayout
     }
   }
 
@@ -227,12 +218,7 @@
           >>
         >>
       >>
-      \layout {
-        \context {
-          \Score
-          \RemoveEmptyStaves
-        }
-      }
+      \pianoLayout
     }
   }
 
@@ -293,7 +279,7 @@
           \new Lyrics \lyricsto "BassM" \include #(string-append prefix "BassT.ily")
         >>
 
-       \new PianoStaff \with \smallStaff <<
+        \new PianoStaff \with \smallStaff <<
           \new Staff <<
             \include #(string-append prefix "Global.ily")
             \include #(string-append prefix "SopranM.ily") \\
@@ -307,12 +293,7 @@
           >>
         >>
       >>
-      \layout {
-        \context {
-          \Score
-          \RemoveEmptyStaves
-        }
-      }
+      \pianoLayout
     }
   }
 }
