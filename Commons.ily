@@ -195,6 +195,14 @@ abo = #(define-music-function (parser location m)(ly:music?)
          #}
          )
 
+blx = #(define-music-function (parser location m)(ly:music?)
+         #{
+           \bassFigureExtendersOn
+           $m
+           \bassFigureExtendersOff
+         #}
+         )
+
 clr = {} %%\once \override Accidental.color = #red
 
 smallStaff = \with {
