@@ -1,5 +1,5 @@
 {
-  cla -- ma -- vi ad te, de__ pro -- fun -- dis cla ma -- _ _ _ vi ad __ te __ _ _ Do -- mi -- ne.
+  cla -- ma -- vi ad te, de __ pro -- fun -- dis cla ma -- _ _ _ vi ad __ te __ _ _ Do -- mi -- ne.
   Do -- mi  -- ne ex -- au -- di, Do -- mi -- ne ex -- au -- di vo -- cem me -- am,
   ex -- au -- di vo -- _ cem, ex -- au -- di vo -- cem me -- _ _ _ _ am.
   Fi -- ant au -- res tu -- ae in -- ten -- den -- tes,
