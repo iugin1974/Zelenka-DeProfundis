@@ -6,13 +6,26 @@
 \pointAndClickOff
 
 \paper {
+  ragged-last-bottom = ##f
   markup-system-spacing.padding = #5
+  system-separator-markup = \slashSeparator
   scoreTitleMarkup = \markup {
     \column {
       \fill-line { \fontsize #4 \bold \fromproperty #'header:piece }
       \fill-line { \fontsize #2 \bold \fromproperty #'header:instrument }
       \line { \hspace #5 { \fromproperty #'header:meter }}
     }
+  }
+}
+
+\layout {
+  \context {
+    \StaffGroup
+    \RemoveEmptyStaves
+  }
+  \context {
+    \FiguredBass
+    \override BassFigure.font-size = #1
   }
 }
 
@@ -88,22 +101,17 @@
           \new Lyrics \lyricsto "BassIII" \include #(string-append prefix "Bass3T.ily")
         >>
 
-        \new PianoStaff <<
-          \new Staff << \include #(string-append prefix "Global.ily") \include #(string-append prefix "RH.ily") >>
-          \new Staff
-          <<
-            \clef "bass" \include #(string-append prefix "Global.ily")
-            \new Voice { \include #(string-append prefix "Violoncello.ily") }
-          >>
+
+        \new Staff
+        <<
+          \clef "bass" \include #(string-append prefix "Global.ily")
+          \new Voice { \include #(string-append prefix "Violoncello.ily") }
         >>
-        \new FiguredBass { \include #(string-append prefix "Continuo.ily") }
-      >>
-      \layout {
-        \context {
-          \Score
-          \RemoveEmptyStaves
+        \new FiguredBass {
+          \include #(string-append prefix "Continuo.ily")
         }
-      }
+      >>
+
     }
   }
 
@@ -177,22 +185,17 @@
           \new Lyrics \lyricsto "BassM" \include #(string-append prefix "BassT.ily")
         >>
 
-        \new PianoStaff <<
-          \new Staff << \include #(string-append prefix "Global.ily") \include #(string-append prefix "RH.ily") >>
-          \new Staff
-          <<
-            \clef "bass" \include #(string-append prefix "Global.ily")
-            \new Voice { \include #(string-append prefix "Violoncello.ily") }
-          >>
+
+        \new Staff
+        <<
+          \clef "bass" \include #(string-append prefix "Global.ily")
+          \new Voice { \include #(string-append prefix "Violoncello.ily") }
         >>
-        \new FiguredBass { \include #(string-append prefix "Continuo.ily") }
-      >>
-      \layout {
-        \context {
-          \Score
-          \RemoveEmptyStaves
+        \new FiguredBass {
+          \include #(string-append prefix "Continuo.ily")
         }
-      }
+      >>
+
     }
   }
 
@@ -202,11 +205,9 @@
     \score {
       \include #(string-append prefix "Header.ily")
       <<
-        \new StaffGroup <<
-          \new Staff \with \obvn
-          \new Voice = "Oboe"
-          << \clef "treble" \include #(string-append prefix "Global.ily") \include #(string-append prefix "Oboe.ily") >>
-        >>
+        \new Staff \with \obvn
+        \new Voice = "Oboe"
+        << \clef "treble" \include #(string-append prefix "Global.ily") \include #(string-append prefix "Oboe.ily") >>
 
         \new ChoirStaff <<
           \new Staff \with \svn
@@ -220,16 +221,16 @@
           \new Lyrics \lyricsto "TenorM" \include #(string-append prefix "TenorT.ily")
         >>
 
-        \new PianoStaff <<
-          \new Staff << \include #(string-append prefix "Global.ily") \include #(string-append prefix "RH.ily") >>
-          \new Staff
-          <<
-            \clef "bass" \include #(string-append prefix "Global.ily")
-            \new Voice { \include #(string-append prefix "Violoncello.ily") }
-          >>
+        \new Staff
+        <<
+          \clef "bass" \include #(string-append prefix "Global.ily")
+          \new Voice { \include #(string-append prefix "Violoncello.ily") }
         >>
-        \new FiguredBass { \include #(string-append prefix "Continuo.ily") }
+        \new FiguredBass {
+          \include #(string-append prefix "Continuo.ily")
+        }
       >>
+
     }
   }
 
@@ -260,22 +261,17 @@
           \new Lyrics \lyricsto "BassM" \include #(string-append prefix "BassT.ily")
         >>
 
-        \new PianoStaff <<
-          \new Staff << \include #(string-append prefix "Global.ily") \include #(string-append prefix "RH.ily") >>
-          \new Staff
-          <<
-            \clef "bass" \include #(string-append prefix "Global.ily")
-            \new Voice { \include #(string-append prefix "Violoncello.ily") }
-          >>
+
+        \new Staff
+        <<
+          \clef "bass" \include #(string-append prefix "Global.ily")
+          \new Voice { \include #(string-append prefix "Violoncello.ily") }
         >>
-        \new FiguredBass { \include #(string-append prefix "Continuo.ily") }
-      >>
-      \layout {
-        \context {
-          \Score
-          \RemoveEmptyStaves
+        \new FiguredBass {
+          \include #(string-append prefix "Continuo.ily")
         }
-      }
+      >>
+
     }
   }
 
@@ -316,6 +312,7 @@
       <<
         \new ChoirStaff <<
           \new Staff \with \svn
+          \with { instrumentName = "jkl" }
           \new Voice = "SopranM"
           << \clef "treble" \include #(string-append prefix "Global.ily") \include #(string-append prefix "SopranM.ily") >>
           \new Lyrics \lyricsto "SopranM" \include #(string-append prefix "SopranT.ily")
@@ -336,22 +333,19 @@
           \new Lyrics \lyricsto "BassM" \include #(string-append prefix "BassT.ily")
         >>
 
-        \new PianoStaff <<
-          \new Staff << \include #(string-append prefix "Global.ily") \include #(string-append prefix "RH.ily") >>
-          \new Staff
-          <<
-            \clef "bass" \include #(string-append prefix "Global.ily")
-            \new Voice { \include #(string-append prefix "Violoncello.ily") }
-          >>
+
+        \new Staff
+        <<
+          \clef "bass" \include #(string-append prefix "Global.ily")
+          \new Voice { \include #(string-append prefix "Violoncello.ily") }
         >>
-        \new FiguredBass { \include #(string-append prefix "Continuo.ily") }
-      >>
-      \layout {
-        \context {
-          \Score
-          \RemoveEmptyStaves
+        \new FiguredBass {
+          \include #(string-append prefix "Continuo.ily")
         }
-      }
+      >>
+
     }
   }
 }
+
+
