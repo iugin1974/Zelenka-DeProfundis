@@ -1,6 +1,6 @@
 \header {
 	piece = "03. Sustinuit"
-	instrument = "Duett: Sopran und Tenor"
+	instrument = "Duett: Alt und Tenor"
 	meter = "03:30"
 }
 

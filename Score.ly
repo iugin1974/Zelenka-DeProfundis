@@ -210,10 +210,10 @@
         << \clef "treble" \include #(string-append prefix "Global.ily") \include #(string-append prefix "Oboe.ily") >>
 
         \new ChoirStaff <<
-          \new Staff \with \svn
-          \new Voice = "SopranM"
-          << \clef "treble" \include #(string-append prefix "Global.ily") \include #(string-append prefix "SopranM.ily") >>
-          \new Lyrics \lyricsto "SopranM" \include #(string-append prefix "SopranT.ily")
+          \new Staff \with \avn
+          \new Voice = "AltM"
+          << \clef "treble" \include #(string-append prefix "Global.ily") \include #(string-append prefix "AltM.ily") >>
+          \new Lyrics \lyricsto "AltM" \include #(string-append prefix "AltT.ily")
 
           \new Staff \with \tvn
           \new Voice = "TenorM"
