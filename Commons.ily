@@ -221,3 +221,17 @@ pianoLayout = \layout {
     \omit Dynamics.DynamicText
   }
 }
+
+% valore di default: nessuna citazione
+#(define quoteName #f)
+
+cueVc =
+#(define-music-function (music) (ly:music?)
+   (if quoteName
+       #{
+         {
+           \new CueVoice { \set instrumentCueName = "Vc." }
+           \cueDuringWithClef #quoteName #UP "bass" $music
+         }
+       #}
+       music))

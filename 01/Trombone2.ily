@@ -1,5 +1,5 @@
 \relative d' {
-  R1*4/4*3 |
+  \cueVc { R1*4/4*3 }|
   r2 r4 d~  |
 
   %5
@@ -7,7 +7,7 @@
   r4 g d'2 |
   c d |
   cis4 r r2 |
-  R1*4/4*22 |
+  \cueVc { R1*4/4*22 } |
   e2 f4 fis |
   gis e f g |
   c, f h, e~  |
@@ -21,7 +21,7 @@
 
   %75
   \time 4/4
-  R1*4/4*3 |
+  \cueVc { R1*4/4*3 }|
   r2 r4 d'~  |
   d~  d8 c b2 |
 
